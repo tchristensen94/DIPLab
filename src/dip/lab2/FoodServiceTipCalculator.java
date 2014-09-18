@@ -9,6 +9,7 @@ package dip.lab2;
  * @author your name goes here
  */
 public class FoodServiceTipCalculator implements CalculatorStrategy {
+
     private double minBill = 0.00;
     private String BILL_ENTRY_ERR =
             "Error: bill must be greater than or equal to " + minBill;
@@ -26,6 +27,7 @@ public class FoodServiceTipCalculator implements CalculatorStrategy {
 
     @Override
     public double getTip() {
+
         double tip = 0.00; // always initialize local variables
 
         switch(serviceQuality) {
@@ -54,6 +56,7 @@ public class FoodServiceTipCalculator implements CalculatorStrategy {
     }
 
     public void setRate(double rate) {
+
         switch(serviceQuality) {
             case GOOD:
                 goodRate = rate;
@@ -67,6 +70,7 @@ public class FoodServiceTipCalculator implements CalculatorStrategy {
         }
     }
     public void getRate(ServiceQuality quality) {
+
         double rate = 0.00;
         switch(quality) {
             case GOOD:

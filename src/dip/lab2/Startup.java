@@ -21,6 +21,7 @@ import javax.swing.JOptionPane;
 public class Startup {
  
     public static void main(String[] args) {
+
         TipManager tm = new TipManager(new BaggageServiceTipCalculator(ServiceQuality.GOOD, 50));
 
         System.out.println(tm.getTip());
